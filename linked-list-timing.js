@@ -7,3 +7,20 @@ Construct a timing test to verify the time complexities of `addToHead` and
 */
 
 // Your code here
+
+const linked = new LinkedList();
+
+for(let i = 0; i < 100; i++){
+    const start = performance.now();
+    linked.addToHead(i);
+    const end = performance.now();
+    console.log(end - start);
+}
+
+
+for(let i = i; i < 1000; i++){
+    const start = performance.now();
+    linked.addToTail(i);
+    const end = performance.now();
+    console.log(end - start);
+}
